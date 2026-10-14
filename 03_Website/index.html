@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>CyberShield Girls</title>
+  <meta name="description" content="Qizlar va talabalar uchun raqamli xavfsizlik bo'yicha interaktiv platforma. Think before you click.">
+
+  <!-- iPhone / iPad / Mac Safari -->
+  <meta name="theme-color" content="#05070c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CyberShield">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <a class="skip" href="#view">Asosiy kontentga o'tish</a>
+  <div class="backdrop" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <div class="app">
+    <!-- Kompyuterda: chap menyu -->
+    <aside class="sidebar">
+      <a href="#/" class="logo"><span class="logo-mark" aria-hidden="true"></span>Cyber<span>Shield</span> Girls</a>
+      <div class="level-chip" data-level></div>
+      <nav id="sidenav" aria-label="Asosiy menyu"></nav>
+      <p class="sidebar-foot">Think before you click.</p>
+    </aside>
+
+    <!-- Telefonda: yuqori panel -->
+    <header class="topbar">
+      <a href="#/" class="logo"><span class="logo-mark" aria-hidden="true"></span>Cyber<span>Shield</span></a>
+      <div class="level-chip" data-level></div>
+    </header>
+
+    <main id="view" tabindex="-1"></main>
+
+    <!-- Telefonda: pastki menyu -->
+    <nav id="tabbar" class="tabbar" aria-label="Pastki menyu"></nav>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- iPhone Telegram/Fayllar oldindan ko'rishda JavaScript ishlamaydi — shunda shu ko'rsatma chiqadi -->
+  <noscript>
+    <style>.app { display: none; }</style>
+    <div style="max-width:440px;margin:15vh auto 0;padding:24px;border:1px solid #1e3a8a;border-radius:16px;background:#0b1220;color:#e6edf7;font:16px/1.6 -apple-system,Segoe UI,sans-serif">
+      <h1 style="margin:0 0 8px;font-size:22px">CyberShield Girls</h1>
+      <p style="margin:0 0 12px;color:#8b97ab">Bu oyna ilovani faqat ko'rib chiqish rejimida ochdi, unda ilova ishlamaydi.</p>
+      <p style="margin:0 0 6px"><b>iPhone'da ochish:</b></p>
+      <ol style="margin:0;padding-left:20px;color:#cbd5e1">
+        <li>Ulashish tugmasini bosing va <b>Safari'da ochish</b> yoki <b>Fayllarga saqlash</b>ni tanlang.</li>
+        <li>Yoki sizga yuborilgan <b>havola</b> orqali oching — bu eng qulay yo'l.</li>
+      </ol>
+    </div>
+  </noscript>
+
+  <!-- Tartib muhim: avval ma'lumot va yordamchilar, oxirida app.js -->
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/views/home.js"></script>
+  <script src="js/views/test.js"></script>
+  <script src="js/views/learn.js"></script>
+  <script src="js/views/phishing.js"></script>
+  <script src="js/views/social.js"></script>
+  <script src="js/views/account.js"></script>
+  <script src="js/views/info.js"></script>
+  <script src="js/views/library.js"></script>
+  <script src="js/views/results.js"></script>
+  <script src="js/views/profile.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/bg.js"></script>
+</body>
+</html>

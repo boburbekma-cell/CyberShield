@@ -1,0 +1,5 @@
+dist/
+__pycache__/
+# Ishtirokchilar ma'lumotlari ommaviy repozitoriyga yuklanmaydi
+06_Statistics/data/*.csv
+05_Survey/survey_responses.csv

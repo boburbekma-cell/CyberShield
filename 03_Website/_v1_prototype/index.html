@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <!-- iPhone / Safari uchun -->
+  <meta name="theme-color" content="#0a0d14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CyberShield">
+  <meta name="format-detection" content="telephone=no">
+  <title>CyberShield Girls</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigatsiya -->
+  <header class="nav">
+    <a href="#home" class="logo">Cyber<span>Shield</span> Girls</a>
+    <nav>
+      <a href="#phishing">Phishing Detector</a>
+      <a href="#social">Social Engineering</a>
+      <a href="#account">Account Check</a>
+      <a href="#ai">AI &amp; Deepfake</a>
+      <a href="#girls">For Girls</a>
+      <a href="#library">Cyber Library</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bosh sahifa -->
+    <section id="home" class="hero">
+      <p class="eyebrow">Raqamli xavfsizlik platformasi</p>
+      <h1>CyberShield Girls</h1>
+      <p class="slogan">Think before you click.</p>
+      <p class="lead">Qizlar va talabalar uchun interaktiv platforma. Bu yerda nazariya yodlanmaydi: real xabarlar va vaziyatlarni tahlil qilasiz, qaror qabul qilasiz va har bir xato nima uchun xavfli ekanini bilib olasiz.</p>
+      <a href="#phishing" class="btn btn-primary">Start Security Test</a>
+    </section>
+
+    <!-- 1. Phishing Detector -->
+    <section id="phishing" class="module">
+      <div class="module-head">
+        <span class="tag">Modul 1</span>
+        <h2>Phishing Detector</h2>
+        <p>Xabarni o'qing va qaror qiling: bu xavfsizmi yoki phishing?</p>
+      </div>
+      <div class="card" id="phish-card">
+        <div class="phish-meta">
+          <span id="phish-progress">1 / 6</span>
+          <span>Ball: <b id="phish-score">0</b></span>
+        </div>
+        <div class="message">
+          <div class="msg-from" id="phish-from"></div>
+          <div class="msg-text" id="phish-text"></div>
+        </div>
+        <div class="actions" id="phish-actions">
+          <button class="btn btn-safe" data-answer="safe">Xavfsiz</button>
+          <button class="btn btn-danger" data-answer="phishing">Phishing</button>
+        </div>
+        <div class="feedback" id="phish-feedback" hidden></div>
+        <button class="btn btn-ghost" id="phish-next" hidden>Keyingi xabar →</button>
+      </div>
+    </section>
+
+    <!-- 2. Social Engineering Simulator -->
+    <section id="social" class="module">
+      <div class="module-head">
+        <span class="tag">Modul 2</span>
+        <h2>Social Engineering Simulator</h2>
+        <p>Firibgarlar texnikani emas, odamni aldaydi: ishonch, qo'rquv, qiziqish va shoshilinch hissi orqali.</p>
+      </div>
+      <div class="card" id="social-card">
+        <div class="phish-meta"><span id="social-progress"></span><span id="social-trick" class="trick"></span></div>
+        <p class="scenario" id="social-text"></p>
+        <div class="choices" id="social-choices"></div>
+        <div class="feedback" id="social-feedback" hidden></div>
+        <button class="btn btn-ghost" id="social-next" hidden>Keyingi vaziyat →</button>
+      </div>
+    </section>
+
+    <!-- 3. Account Security Check -->
+    <section id="account" class="module">
+      <div class="module-head">
+        <span class="tag">Modul 3</span>
+        <h2>Account Security Check</h2>
+        <p>O'z odatlaringizni belgilang va shartli Cybersecurity Score'ni ko'ring.</p>
+      </div>
+      <div class="card account-grid">
+        <form id="account-form"></form>
+        <div class="score-box">
+          <div class="score-ring"><span id="cyber-score">0</span><small>/100</small></div>
+          <p id="score-level" class="score-level"></p>
+          <ul id="score-tips" class="tips"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. AI & Deepfake Safety -->
+    <section id="ai" class="module">
+      <div class="module-head">
+        <span class="tag">Modul 4</span>
+        <h2>AI &amp; Deepfake Safety</h2>
+        <p>Sun'iy intellekt yordamida soxta ovoz, rasm va video yasash oson bo'lib qoldi.</p>
+      </div>
+      <div class="grid" id="ai-grid"></div>
+    </section>
+
+    <!-- 5. CyberSafety for Girls -->
+    <section id="girls" class="module">
+      <div class="module-head">
+        <span class="tag">Modul 5</span>
+        <h2>CyberSafety for Girls</h2>
+        <p>Ijtimoiy tarmoqlar, rasmlar, shaxsiy ma'lumotlar va raqamli obro'ni himoya qilish.</p>
+      </div>
+      <div class="grid" id="girls-grid"></div>
+    </section>
+
+    <!-- 6. Cyber Library -->
+    <section id="library" class="module">
+      <div class="module-head">
+        <span class="tag">Modul 6</span>
+        <h2>Cyber Library</h2>
+        <p>Asosiy atamalar qisqa va oddiy tilda.</p>
+      </div>
+      <input type="search" id="library-search" class="search" placeholder="Qidirish: 2FA, VPN, malware...">
+      <div class="grid" id="library-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>CyberShield Girls · Muallif: Nozima · Cybersecurity / IT · Ilmiy-amaliy loyiha</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
