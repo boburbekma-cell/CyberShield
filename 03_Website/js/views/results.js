@@ -106,6 +106,8 @@ function copy(text, box, btn) {
 }
 
 function download(text, code) {
+  // Android ilovada fayl yuklab bo'lmaydi — ulashish oynasi ochiladi (Telegram, email...)
+  if (window.AndroidApp) { AndroidApp.share(text, `cybershield_${code || "natija"}.csv`); return; }
   const blob = new Blob(["﻿" + text], { type: "text/csv;charset=utf-8" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
