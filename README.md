@@ -2,6 +2,8 @@
 
 **Think before you click.**
 
+**Sayt:** https://boburbekma-cell.github.io/CyberShield/03_Website/
+
 Zamonaviy kiberxavflarni amaliy simulyatsiyalar orqali tanib olish va oldini olishni o'rgatuvchi interaktiv platforma hamda uning samaradorligini tekshiruvchi tadqiqot.
 
 ## Muammo

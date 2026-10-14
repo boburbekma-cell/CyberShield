@@ -44,12 +44,12 @@ Roadmap'dagi papka nomlari va loyihadagi haqiqiy papkalar:
 | 15 | Testlash: pre-test → platforma → post-test | ⬜ real ishtirokchilar bilan o'tkazish kerak | Saytdagi **Security Test** |
 | 16 | Statistika | ⬜ skript tayyor, ma'lumot kutilmoqda | `06_Statistics` |
 | 17 | Natijani tahlil qilish | ⬜ | `06_Statistics/results_summary.md` |
-| 18 | GitHub | 🟡 `README.md` tayyor, repozitoriy ochish kerak | Loyiha ildizi |
-| 19 | Saytni onlayn joylash | ⬜ GitHub Pages / Netlify | README → "Onlayn joylash" |
+| 18 | GitHub | ✅ | https://github.com/boburbekma-cell/CyberShield |
+| 19 | Saytni onlayn joylash | ✅ GitHub Pages (telefon va kompyuterda tekshiring) | https://boburbekma-cell.github.io/CyberShield/03_Website/ |
 | 20 | Taqdimot | 🟡 reja tayyor | `07_Presentation` |
 | 21 | Yakuniy hisobot | 🟡 tuzilma tayyor | `08_Final_Report` |
 
-**Sayt havolasi:** _(joylangandan keyin shu yerga yozing)_
+**Sayt havolasi:** https://boburbekma-cell.github.io/CyberShield/03_Website/
 
 ## Eksperiment tartibi (15–17-bosqichlar)
 
